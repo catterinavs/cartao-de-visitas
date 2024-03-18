@@ -1,0 +1,58 @@
+img{
+  max-width: 150px;
+  margin-top: 32px;
+}
+
+p{
+  margin: 0;
+  padding: 10px 0;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+}
+
+button{
+  border: none;
+  font-size: 36px;
+  margin: 10px 10px 0 10px;
+}
+
+.text-title{
+  text-align: center;
+  color: white;
+}
+
+h2{
+  font-size: 25px;
+  font-weight: 600 !important;
+}
+
+@media (min-width : 600px){
+  .line{
+    width: 50%;
+    margin-left: 25%;
+  }
+}
+
+.line{
+	width:0%;
+	margin:auto;
+	padding:0.02em; /* not lower than 0.02em */
+  background-color: white;
+	animation: line 1.25s ease forwards;
+}
+
+
+.line-height
+	{
+	height:16px;
+	}
+@keyframes line {
+    from { width: 0%; }
+    to { width:75%; }
+}
+.bg{
+  background-image: linear-gradient(rgb(39, 0, 0), black);
+}

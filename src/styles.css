@@ -1,1 +1,57 @@
-/* You can add global styles to this file, and also import other style files */
+body{
+  background-color: black;
+}
+
+html, body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+}
+button, input{
+  font-family: 'Raleway', sans-serif;
+} 
+
+/*Custom colors*/
+.black-bean{
+  background-color: #280000;
+  color: white;
+}
+.rosewood{
+  background-color: #570000;
+  color: white;
+}
+.madder{
+  background-color: #B10F2E;
+  color: white;
+}
+.burnt-sienna{
+  background-color: #DE7C5A;
+  color: black;
+}
+/*---------------------------*/
+.mardi-gras{
+  background-color: #801A86;
+  color: white;
+}
+.mardi-gras-darker{
+  background-color: #18051a;
+  color: white;
+}
+.ultra-violet{
+  background-color: #645986;
+  color: white;
+}
+.ultra-violet-darker{
+  background-color: #302a41;
+  color: white;
+}
+.light-green{
+  background-color: #8FE388;
+  color: black;
+}
+.emerald{
+  background-color: #58BC82;
+  color: black;
+}

@@ -1,0 +1,15 @@
+<div class="center surprise">
+  <div *ngIf="surprise.loaded">
+    <img src={{surprise.src}} alt="foto aleatória">
+  </div>
+  <div *ngIf="!surprise.loaded" class="loader">
+    <div class="loader-dot"></div>
+    <div class="loader-dot"></div>
+    <div class="loader-dot"></div>
+  </div>
+  <div>
+    <p>{{surprise.frase}}</p>
+  </div>
+  <div><button class="black btn" (click)="novaImagem()">Nova Imagem</button></div>
+  <div><button class="black btn last" routerLink="/home">Voltar</button></div>
+</div>

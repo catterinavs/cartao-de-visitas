@@ -1,0 +1,23 @@
+<form #f="ngForm" class="contact-form" (ngSubmit)="onSubmit($event, f)">
+  <div>
+    <label>Nome</label>
+    <input [class.erro]="!name.valid && name.touched" type="text" name="user_name" required [(ngModel)]="form.user_name" #name="ngModel">
+    <div class="erro" *ngIf="!name.valid && name.touched">Nome é obrigatório!</div>
+  </div>
+
+  <div>
+    <label>Email</label>
+    <input [class.erro]="!email.valid && email.touched" type="email" name="user_email" required email [(ngModel)]="form.user_email" #email="ngModel">
+    <div class="erro" *ngIf="!email.valid && email.touched">Email é obrigatório!</div>
+  </div>
+
+  <div>
+    <label>Mensagem</label>
+    <textarea [class.erro]="!message.valid && message.touched" name="message" required [(ngModel)]="form.message" #message="ngModel"></textarea>
+    <div class="erro" *ngIf="!message.valid && message.touched">Mensagem é obrigatório!</div>
+  </div>
+
+  <input type="submit" value="Enviar" [disabled]="!f.valid">
+  <button class="black" routerLink="/home">Voltar</button>
+</form>
+

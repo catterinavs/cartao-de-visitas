@@ -1,0 +1,42 @@
+a{
+  margin-right: 0 !important;
+  color: #ffffff !important;
+}
+.card-title{
+  font-size: 48px;
+}
+.card{
+  margin-bottom: 0px;
+}
+.row{
+  margin-bottom: 0px;
+}
+
+.dark{
+  background-color: black;
+  color: white;
+}
+
+.light{
+  background-color: white;
+  color: black;
+}
+
+.card-light{
+  color: black;
+  background-color: #7e7e7e;
+}
+
+.card-dark{
+  color: white;
+  background-color: #111111;
+}
+
+@media (min-width : 600px){
+  .card{
+    width: 100%;
+    margin-left: 51.5%;
+  }
+}
+
+
